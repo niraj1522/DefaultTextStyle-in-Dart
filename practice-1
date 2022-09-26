@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('Text Widget in flutter'),
+          ),
+          body: Column(
+            children: [
+              DefaultTextStyle(
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 20.0,
+                  ),
+                  child: Column(
+                    children: [
+                      Text('First'),
+                      Text(
+                        'Second',
+                        style: TextStyle(color: Colors.blue, fontSize: 30.0),
+                      ),
+                      Text('Third'),
+                      Text('Fourth'),
+                    ],
+                  ))
+            ],
+          )),
+    ),
+  );
+}
